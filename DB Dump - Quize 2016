@@ -1,0 +1,62 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.1.52-community
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema quiz
+--
+
+CREATE DATABASE IF NOT EXISTS quiz;
+USE quiz;
+
+--
+-- Definition of table `number`
+--
+
+DROP TABLE IF EXISTS `number`;
+CREATE TABLE `number` (
+  `Number` int(11) NOT NULL,
+  `State` varchar(45) DEFAULT 'Not',
+  PRIMARY KEY (`Number`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `number`
+--
+
+/*!40000 ALTER TABLE `number` DISABLE KEYS */;
+INSERT INTO `number` (`Number`,`State`) VALUES 
+ (1,'Not'),
+ (2,'Not'),
+ (3,'Not'),
+ (4,'Not'),
+ (5,'Not'),
+ (6,'Not'),
+ (7,'Not'),
+ (8,'Not'),
+ (9,'Not'),
+ (10,'Not');
+/*!40000 ALTER TABLE `number` ENABLE KEYS */;
+
+
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
